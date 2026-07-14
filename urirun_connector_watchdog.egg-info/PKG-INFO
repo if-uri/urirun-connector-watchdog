@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: urirun-connector-watchdog
+Version: 0.1.0
+Summary: Wykrywa zapętlenia/stagnację koru, robi rootcause i przerywa jałową pętlę + eskaluje (watch://).
+Author: Tom Sapletta
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: urirun>=0.4.14
+
+# urirun-connector-watchdog
+
+`watch://` — wybudza urirun gdy pętla stoi: wykrywa zapętlenia/stagnację koru z logu,
+diagnozuje rootcause (needs_input / no_executor / env / stalled), przerywa jałową pętlę
+(`ticket→blocked` + notatka) i eskaluje do panelu / `human://`.

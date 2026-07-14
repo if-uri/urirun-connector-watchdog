@@ -1,0 +1,2 @@
+[urirun.bindings]
+watch = urirun_connector_watchdog.core:urirun_bindings

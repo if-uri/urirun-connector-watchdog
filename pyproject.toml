@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "urirun-connector-watchdog"
+version = "0.1.0"
+description = "Wykrywa zapętlenia/stagnację koru, robi rootcause i przerywa jałową pętlę + eskaluje (watch://)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Tom Sapletta" }]
+dependencies = ["urirun>=0.4.14"]
+
+[project.entry-points."urirun.bindings"]
+watch = "urirun_connector_watchdog.core:urirun_bindings"
+
+[tool.setuptools.packages.find]
+include = ["urirun_connector_watchdog*"]

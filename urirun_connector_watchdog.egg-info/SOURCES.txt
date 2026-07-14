@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+tests/test_genuine_wait.py
+tests/test_watchdog.py
+urirun_connector_watchdog/__init__.py
+urirun_connector_watchdog/core.py
+urirun_connector_watchdog.egg-info/PKG-INFO
+urirun_connector_watchdog.egg-info/SOURCES.txt
+urirun_connector_watchdog.egg-info/dependency_links.txt
+urirun_connector_watchdog.egg-info/entry_points.txt
+urirun_connector_watchdog.egg-info/requires.txt
+urirun_connector_watchdog.egg-info/top_level.txt
